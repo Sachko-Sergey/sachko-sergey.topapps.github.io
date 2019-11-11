@@ -1,0 +1,111 @@
+.features {
+  color: $text-color-white;
+  background: $main-color-blue;
+  .section__header {
+    &-title {
+      color: $text-color-white;
+    }
+    &-text {
+      color: $text-color-white;
+    }
+    &-dots {
+      &_i {
+        background: $text-color-white;
+      }
+      &::before {
+        content: '';
+        width: 30px;
+        height: 1px;
+        background-color: $text-color-white;
+        display: block;
+        position: absolute;
+        top: 49%;
+        left: -40px;
+      }
+      &::after {
+        content: '';
+        width: 30px;
+        height: 1px;
+        background-color: $text-color-white;
+        display: block;
+        position: absolute;
+        top: 49%;
+        left: 40px;
+      }
+    }
+  }
+}
+
+.features__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.features__col-left, .features__col-right {
+  text-align: right;
+  &_item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 132px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.features__content {
+  margin-right: 26px;
+  text-align: right;
+}
+
+.features__content-right {
+  margin-left: 26px;
+  margin-right: 0;
+  text-align: left;
+}
+
+.features__col-left_text,.features__col-right_text {
+  max-width: 285px;
+}
+
+.features__col-left_title,.features__col-right_title {
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.features-icon {
+  font-size: 35px;
+  min-width: 50px;
+  text-align: center;
+}
+
+// .features__col-center_img {
+//   padding: 0 25px;
+//   border-right: 1px solid $text-color-white;
+//   border-left: 1px solid $text-color-white;
+// }
+
+// .bef-line {
+//   position: relative;
+//   &::before {
+//     content: '';
+//     width: 24px;
+//     height: 1px;
+//     display: block;
+//     background: $text-color-white;
+//     position: absolute;
+//     right: -24px;
+//     top: 0px;
+//   }
+//   &::after {
+//     content: '';
+//     width: 24px;
+//     height: 1px;
+//     display: block;
+//     background: $text-color-white;
+//     position: absolute;
+//     right: -24px;
+//     bottom: 0px;
+//   }

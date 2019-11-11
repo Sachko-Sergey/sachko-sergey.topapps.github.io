@@ -1,0 +1,22 @@
+.works {
+  &__inner {
+    display: flex;
+    align-items: center;
+  }
+  &__item {
+    margin-bottom: 40px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &-title {
+      font-family: 'Raleway', sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: $main-color-blue;
+    }
+    &-text {
+      color: $text-color-gray_2;
+    }
+  }
+}

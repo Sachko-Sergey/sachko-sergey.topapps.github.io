@@ -1,0 +1,60 @@
+.team {
+  background: $text-color-light;
+  &-inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-item {
+    text-align: center;
+    &__img {
+      background: $main-color-blue;
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    }
+    &__content {
+      padding: 20px 0;
+      background: $text-color-white;
+    }
+    &__name {
+      font-family: 'Raleway', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: $main-color-blue;
+    }
+    &__pos {
+      font-style: italic;
+      text-transform: uppercase;
+      color: $main-color-blue;
+      letter-spacing: 1px;
+
+    }
+    &__social {
+      font-size: 23px;
+      padding: 22px 31px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: $text-color-white;
+      background: $main-color-blue;
+    }
+    &__ic {
+      border: 1px solid transparent;
+      display: block;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      transition: all .3s;
+      -webkit-transition: all .3s;
+      -moz-transition: all .3s;
+      -ms-transition: all .3s;
+      -o-transition: all .3s;
+      &:hover {
+        border: 1px solid $text-color-white;
+        cursor: pointer;
+      }
+    }
+  }
+}

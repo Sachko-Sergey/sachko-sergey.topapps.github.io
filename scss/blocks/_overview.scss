@@ -1,0 +1,25 @@
+.overview {
+  background-color: $text-color-light;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    &-item {
+      padding: 50px 16px;
+      text-align: center;
+      background-color: $text-color-white;
+      flex-basis: 255px;
+      &_title {
+        font-family: 'Raleway', sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 6px;
+      }
+      &_icon {
+        margin-bottom: 40px;
+        color: $main-color-blue;
+        font-size: 40px;
+      }
+    }
+  }
+}
