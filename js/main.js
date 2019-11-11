@@ -1,5 +1,8 @@
 $(function () {
   
+  $('#getForm').validate();
+
+
   $('.slider').slick({
     infinite: true,
     slidesToShow: 4,

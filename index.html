@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,600,700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/d6123897f4.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.min.css">
 </head>
@@ -466,7 +467,7 @@
 
   <section class="video section sec-bot">
     <div class="video__block">
-        <button class="play__btn"><span class="play__btn-pl"><img src="img/video/play.svg" alt=""></span></button>
+        <a data-fancybox href="https://www.youtube.com/watch?v=praYbtuQGHc" class="play__btn"><span class="play__btn-pl"><img src="img/video/play.svg" alt=""></span></a>
         <img class="video__block-img" src="img/video/video.jpg" alt="">
       </div>
       <!-- /.video__block -->
@@ -665,8 +666,8 @@
           <i class="fas fa-envelope"></i>
         <span class="get-form__text">Subscribe to our Newsletter</span>
         </div>
-        <form action="#">
-          <input class="get-form__input" type="text" placeholder="Your Email">
+        <form action="#" id="getForm">
+          <input class="get-form__input" type="text" name="userEmail" required="required" placeholder="Your Email">
           <button class="get-form__btn">subscribe</button>
         </form>
       </div>
@@ -693,11 +694,11 @@
         <!-- /.section__header-text -->
       </div>
       <!-- /.section__header -->
-      <form class="contacts-form" action="">
-        <input class="contacts-form__name" type="text" placeholder="Name">
-        <input class="contacts-form__email" type="text" placeholder="Email">
-        <input class="contacts-form__subject" type="text" placeholder="Subject">
-        <textarea class="contacts-form__message" placeholder="Message"></textarea>
+      <form class="contacts-form" action="#" id="contactForm">
+        <input class="contacts-form__name" type="text" name="userName" required="required" placeholder="Name">
+        <input class="contacts-form__email" type="text" name="userEmail" required="required" placeholder="Email">
+        <input class="contacts-form__subject" type="text" name="subject" placeholder="Subject">
+        <textarea class="contacts-form__message" name="message" placeholder="Message"></textarea>
         <button class="contacts-form__btn">Send Message</button>
       </form>
     </div>
@@ -765,7 +766,9 @@
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
   <script src="js/slick.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/main-dist.js"></script>
 </body>
 </html>
