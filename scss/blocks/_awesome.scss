@@ -36,3 +36,26 @@
     }
   }
 }
+
+@media (max-width: 1200px) {
+  .slider__item-img {
+    margin-left: 0;
+  }
+  .awesome .slick-list {
+    margin-bottom: 92px;
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 580px) {
+  .slider__item-img {
+    margin-left: -24px;
+    margin-right: 8px;
+    img {
+      margin: 0 auto;
+    }
+  }
+  .awesome .slick-list {
+    margin-right: 0px;
+  }
+}

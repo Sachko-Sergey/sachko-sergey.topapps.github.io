@@ -20,3 +20,11 @@
     }
   }
 }
+
+@media (max-width: 875px) {
+  .works {
+    &__left {
+      display: none;
+    }
+  }
+}

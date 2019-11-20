@@ -43,3 +43,20 @@
     }
   }
 }
+
+@media (max-width: 1110px) {
+  .contacts {
+    &-form {
+      margin: 0 auto;
+      max-width: 800px;
+      &__name, &__email {
+        margin-right: 0;
+        width: 100%;
+        margin-bottom: 15px;
+      }
+      &__subject {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}

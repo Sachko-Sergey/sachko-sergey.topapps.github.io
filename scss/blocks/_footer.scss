@@ -60,3 +60,44 @@
   padding: 35px 0;
   color: $text-color-gray_2;
 }
+
+@media (max-width: 1200px) {
+  .footer {
+    &-inner {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+    &-col {
+      &-contact {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: 870px) {
+  .footer {
+    &-col {
+      margin-bottom: 30px;
+      &-contact {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .footer {
+    &-col {
+      &-map {
+        width: 100%;
+        iframe {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -23,3 +23,18 @@
     }
   }
 }
+
+@media (max-width: 1070px) {
+  .overview {
+    &__inner {
+      padding: 0 10px;
+      flex-direction: column;
+      &-item {
+        margin-bottom: 15px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

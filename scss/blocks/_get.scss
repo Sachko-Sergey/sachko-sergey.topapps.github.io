@@ -54,7 +54,7 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  width: 872px;
+  max-width: 872px;
   margin-bottom: 80px;
 }
 
@@ -111,6 +111,65 @@
     &:hover {
       background: #3360c0;
       cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 1020px) {
+  .get-form {
+    &__wrap {
+      flex-direction: column;
+      padding: 22px 25px;
+    }
+    &__title {
+      margin-bottom: 20px;
+    }
+    &__text {
+      margin-left: 14px;
+    }
+  }
+}
+
+@media (max-width: 920px) {
+  .stores {
+    margin-bottom: 20px;
+    flex-direction: column;
+    text-align: center;
+    &__item {
+      margin-bottom: 15px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 510px) {
+  .get-form {
+    &__wrap {
+      flex-direction: column;
+      padding: 22px 25px;
+    }
+    &__title {
+      text-align: center;
+      margin-bottom: 20px;
+      flex-direction: column;
+      i {
+        display: block;
+        margin-bottom: 10px;
+      }
+    }
+    &__text {
+      margin-left: 0;
+    }
+    &__input {
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    &__btn {
+      width: 100%;
+      border-radius: 5px;
     }
   }
 }
